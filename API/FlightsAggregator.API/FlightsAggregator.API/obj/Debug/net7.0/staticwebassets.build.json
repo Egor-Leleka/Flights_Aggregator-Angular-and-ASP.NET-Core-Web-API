@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NVweT+r3C6JvMDpnsXyMBbgB2Skvmi/LrexzvgGzknY=",
+  "Source": "FlightsAggregator.API",
+  "BasePath": "_content/FlightsAggregator.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

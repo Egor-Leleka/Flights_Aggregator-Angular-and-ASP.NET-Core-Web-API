@@ -1,0 +1,12 @@
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\bin\Debug\net7.0\FlightsAggregator.Models.deps.json
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\bin\Debug\net7.0\FlightsAggregator.Models.dll
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\bin\Debug\net7.0\FlightsAggregator.Models.pdb
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\obj\Debug\net7.0\FlightsAggregator.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\obj\Debug\net7.0\FlightsAggregator.Models.AssemblyInfoInputs.cache
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\obj\Debug\net7.0\FlightsAggregator.Models.AssemblyInfo.cs
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\obj\Debug\net7.0\FlightsAggregator.Models.csproj.CoreCompileInputs.cache
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\obj\Debug\net7.0\FlightsAggregator.Models.sourcelink.json
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\obj\Debug\net7.0\FlightsAggregator.Models.dll
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\obj\Debug\net7.0\refint\FlightsAggregator.Models.dll
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\obj\Debug\net7.0\FlightsAggregator.Models.pdb
+C:\Users\lelek\OneDrive\Desktop\Study IT\Web\FlightsAggregator\API\FlightsAggregator.API\FlightsAggregator.Models\obj\Debug\net7.0\ref\FlightsAggregator.Models.dll
