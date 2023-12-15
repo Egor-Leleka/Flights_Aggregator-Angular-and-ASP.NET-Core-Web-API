@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlightsAggregator.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7e5b6e23e21307fd837bf8e576863021f7539a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlightsAggregator.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlightsAggregator.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
