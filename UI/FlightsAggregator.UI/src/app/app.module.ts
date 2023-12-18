@@ -8,13 +8,17 @@ import { SearchFlightsComponent } from './components/search-flights/search-fligh
 import {HttpClientModule} from '@angular/common/http'
 import { ReactiveFormsModule } from '@angular/forms';
 import { BookFlightComponent } from './components/book-flight/book-flight.component';
+import { RegisterPassengerComponent } from './components/register-passenger/register-passenger.component';
+import { MyBookingComponent } from './components/my-booking/my-booking.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SearchFlightsComponent,
-    BookFlightComponent
+    BookFlightComponent,
+    RegisterPassengerComponent,
+    MyBookingComponent
   ],
   imports: [
     BrowserModule,

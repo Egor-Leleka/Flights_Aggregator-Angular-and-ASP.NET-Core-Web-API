@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BookDto } from 'src/app/models/book-dto';
-import { FlightService } from 'src/app/services/flight.service';
-import { AuthService } from '../auth/auth.service';
+import { FlightService } from 'src/app/services/flight/flight.service';
+import { AuthService } from '../../services/auth/auth.service';
 import { FlightRm } from 'src/app/models/flight-rm';
 
 @Component({
@@ -74,9 +74,9 @@ export class BookFlightComponent implements OnInit {
       passengerEmail: this.authService.currentUser?.email
     }
   
-    // this.flightService.bookFlight({ body: booking })
-    //   .subscribe(_ => this.router.navigate(['/my-booking']),
-    //     this.handleError)
+    this.flightService.bookFlight( booking )
+      .subscribe(_ => this.router.navigate(['/my-booking']),
+        this.handleError)
   
   }
 

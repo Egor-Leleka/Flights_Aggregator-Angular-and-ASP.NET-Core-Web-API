@@ -1,0 +1,63 @@
+<form [formGroup]="form">
+    <div class="container d-grid gap-3" style="max-width: 700px;">
+  
+      <div class="form-floating">
+        <input (blur)="checkPassenger()" formControlName="email" placeholder="Email" class="form-control" type="text" />
+        <label for="email">Email</label>
+  
+        <div class="invalid-feedback d-block" *ngIf="form.controls.email.invalid && (form.controls.email.dirty || form.controls.email.touched)">
+          <div *ngIf="form.controls.email.errors">
+            Email is invalid
+          </div>
+        </div>
+  
+      </div>
+      <div class="d-grid gap-3">
+  
+        <div class="form-floating">
+  
+          <input formControlName="firstName" class="form-control" type="text" id="firstName" placeholder="First Name" />
+          <label class="form-label" for="firstName">First Name</label>
+  
+          <div class="invalid-feedback d-block" *ngIf="form.controls.firstName.invalid && (form.controls.firstName.dirty || form.controls.firstName.touched)">
+  
+            <div *ngIf="form.controls.firstName.errors">
+              First name is invalid
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-floating">
+  
+          <input formControlName="lastName" placeholder="Last Name" class="form-control" id="lastName" type="text" />
+          <label class="form-label" for="lastName">Last Name</label>
+  
+          <div class="invalid-feedback d-block" *ngIf="form.controls.lastName.invalid && (form.controls.lastName.dirty || form.controls.lastName.touched)">
+            <div *ngIf="form.controls.lastName.errors">
+              Last name is invalid
+            </div>
+  
+          </div>
+        </div>
+  
+  
+        <div>
+          <input formControlName="isFemale" id="female" class="form-check-input" [value]="true" type="radio" />
+        <label class="ms-2 form-check-label" for="female">Female</label>
+        </div>
+        <div>
+          <input formControlName="isFemale" id="male" class="form-check-input" [value]="false" type="radio" />
+        <label class="ms-2 form-check-label" for="male">Male</label>
+        </div>
+
+        
+        
+        
+
+      </div>
+      <div class="d-flex justify-content-center center">
+        <button (click)="register()" type="submit" class="btn btn-primary">Login <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </form>
+  

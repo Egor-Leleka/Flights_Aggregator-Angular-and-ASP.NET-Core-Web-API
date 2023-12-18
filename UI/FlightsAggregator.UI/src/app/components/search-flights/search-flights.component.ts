@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { FlightRm } from 'src/app/models/flight-rm';
-import { FlightService } from 'src/app/services/flight.service';
+import { FlightService } from 'src/app/services/flight/flight.service';
 
 @Component({
   selector: 'app-search-flights',
