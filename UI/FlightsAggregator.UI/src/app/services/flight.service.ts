@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { FlightRm } from '../models/flight-rm';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpParams } from '@angular/common/http';
+import { BookDto } from '../models/book-dto';
 
 @Injectable({
   providedIn: 'root'
@@ -30,6 +31,19 @@ export class FlightService {
   
     return this.http.get<Array<FlightRm>>(`https://localhost:7290/api/flight`, { params: httpParams });
   }
+
+  
+   findFlight(id: string): Observable<FlightRm> {
+    return this.http.get<FlightRm>(`https://localhost:7290/api/flight/${id}`);
+  }
+  
+
+  // bookFlight(params?: {
+  //   body?: BookDto
+  // }): Observable<void> {
+  //   return
+
+  // }
 
   getMockFlights(): FlightRm[] {
     const mockFlights: FlightRm[] = [];

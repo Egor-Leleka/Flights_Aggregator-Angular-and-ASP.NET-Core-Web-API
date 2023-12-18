@@ -7,12 +7,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchFlightsComponent } from './components/search-flights/search-flights.component';
 import {HttpClientModule} from '@angular/common/http'
 import { ReactiveFormsModule } from '@angular/forms';
+import { BookFlightComponent } from './components/book-flight/book-flight.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SearchFlightsComponent
+    SearchFlightsComponent,
+    BookFlightComponent
   ],
   imports: [
     BrowserModule,
