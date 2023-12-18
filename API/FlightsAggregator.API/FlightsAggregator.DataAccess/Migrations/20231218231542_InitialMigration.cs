@@ -71,9 +71,9 @@ namespace FlightsAggregator.DataAccess.Migrations
                 columns: new[] { "Id", "Airline", "Price", "RemainingNumberOfSeats", "Arrival_Place", "Arrival_Time", "Departure_Place", "Departure_Time" },
                 values: new object[,]
                 {
-                    { new Guid("3ed06715-0de2-45b4-9981-be85678298ba"), "British Airways", "4248", 561, "Vizzola-Ticino", new DateTime(2023, 12, 14, 3, 6, 16, 706, DateTimeKind.Local).AddTicks(8899), "London", new DateTime(2023, 12, 13, 17, 6, 16, 706, DateTimeKind.Local).AddTicks(8763) },
-                    { new Guid("ad8a3d85-a5e3-457d-b9ac-b593a2d8ee04"), "American Airlines", "895", 283, "Istanbul", new DateTime(2023, 12, 13, 23, 6, 16, 706, DateTimeKind.Local).AddTicks(8889), "Los Angeles", new DateTime(2023, 12, 13, 17, 6, 16, 706, DateTimeKind.Local).AddTicks(8687) },
-                    { new Guid("de443a10-0590-45fb-a979-236e02f71da4"), "Deutsche BA", "3461", 454, "Schiphol", new DateTime(2023, 12, 14, 1, 6, 16, 706, DateTimeKind.Local).AddTicks(8896), "Munchen", new DateTime(2023, 12, 13, 17, 6, 16, 706, DateTimeKind.Local).AddTicks(8759) }
+                    { new Guid("572276eb-e09a-47be-a01c-a2bf88cd5898"), "American Airlines", "3318", 205, "Istanbul", new DateTime(2023, 12, 19, 18, 15, 42, 277, DateTimeKind.Local).AddTicks(1165), "Los Angeles", new DateTime(2023, 12, 19, 12, 15, 42, 277, DateTimeKind.Local).AddTicks(1040) },
+                    { new Guid("6ce7df58-6735-41a8-aedd-2bc2d697ec8a"), "British Airways", "3276", 195, "Vizzola-Ticino", new DateTime(2023, 12, 19, 22, 15, 42, 277, DateTimeKind.Local).AddTicks(1170), "London", new DateTime(2023, 12, 19, 12, 15, 42, 277, DateTimeKind.Local).AddTicks(1104) },
+                    { new Guid("a3082f01-a9fb-43b3-951e-caef3f4ced4f"), "Deutsche BA", "3376", 463, "Schiphol", new DateTime(2023, 12, 19, 20, 15, 42, 277, DateTimeKind.Local).AddTicks(1169), "Munchen", new DateTime(2023, 12, 19, 12, 15, 42, 277, DateTimeKind.Local).AddTicks(1101) }
                 });
 
             migrationBuilder.CreateIndex(

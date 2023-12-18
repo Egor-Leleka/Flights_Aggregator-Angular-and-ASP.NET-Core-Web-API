@@ -71,24 +71,24 @@ namespace FlightsAggregator.DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ad8a3d85-a5e3-457d-b9ac-b593a2d8ee04"),
+                            Id = new Guid("572276eb-e09a-47be-a01c-a2bf88cd5898"),
                             Airline = "American Airlines",
-                            Price = "895",
-                            RemainingNumberOfSeats = 283
+                            Price = "3318",
+                            RemainingNumberOfSeats = 205
                         },
                         new
                         {
-                            Id = new Guid("de443a10-0590-45fb-a979-236e02f71da4"),
+                            Id = new Guid("a3082f01-a9fb-43b3-951e-caef3f4ced4f"),
                             Airline = "Deutsche BA",
-                            Price = "3461",
-                            RemainingNumberOfSeats = 454
+                            Price = "3376",
+                            RemainingNumberOfSeats = 463
                         },
                         new
                         {
-                            Id = new Guid("3ed06715-0de2-45b4-9981-be85678298ba"),
+                            Id = new Guid("6ce7df58-6735-41a8-aedd-2bc2d697ec8a"),
                             Airline = "British Airways",
-                            Price = "4248",
-                            RemainingNumberOfSeats = 561
+                            Price = "3276",
+                            RemainingNumberOfSeats = 195
                         });
                 });
 
@@ -148,21 +148,21 @@ namespace FlightsAggregator.DataAccess.Migrations
                             b1.HasData(
                                 new
                                 {
-                                    FlightId = new Guid("ad8a3d85-a5e3-457d-b9ac-b593a2d8ee04"),
+                                    FlightId = new Guid("572276eb-e09a-47be-a01c-a2bf88cd5898"),
                                     Place = "Istanbul",
-                                    Time = new DateTime(2023, 12, 13, 23, 6, 16, 706, DateTimeKind.Local).AddTicks(8889)
+                                    Time = new DateTime(2023, 12, 19, 18, 15, 42, 277, DateTimeKind.Local).AddTicks(1165)
                                 },
                                 new
                                 {
-                                    FlightId = new Guid("de443a10-0590-45fb-a979-236e02f71da4"),
+                                    FlightId = new Guid("a3082f01-a9fb-43b3-951e-caef3f4ced4f"),
                                     Place = "Schiphol",
-                                    Time = new DateTime(2023, 12, 14, 1, 6, 16, 706, DateTimeKind.Local).AddTicks(8896)
+                                    Time = new DateTime(2023, 12, 19, 20, 15, 42, 277, DateTimeKind.Local).AddTicks(1169)
                                 },
                                 new
                                 {
-                                    FlightId = new Guid("3ed06715-0de2-45b4-9981-be85678298ba"),
+                                    FlightId = new Guid("6ce7df58-6735-41a8-aedd-2bc2d697ec8a"),
                                     Place = "Vizzola-Ticino",
-                                    Time = new DateTime(2023, 12, 14, 3, 6, 16, 706, DateTimeKind.Local).AddTicks(8899)
+                                    Time = new DateTime(2023, 12, 19, 22, 15, 42, 277, DateTimeKind.Local).AddTicks(1170)
                                 });
                         });
 
@@ -188,21 +188,21 @@ namespace FlightsAggregator.DataAccess.Migrations
                             b1.HasData(
                                 new
                                 {
-                                    FlightId = new Guid("ad8a3d85-a5e3-457d-b9ac-b593a2d8ee04"),
+                                    FlightId = new Guid("572276eb-e09a-47be-a01c-a2bf88cd5898"),
                                     Place = "Los Angeles",
-                                    Time = new DateTime(2023, 12, 13, 17, 6, 16, 706, DateTimeKind.Local).AddTicks(8687)
+                                    Time = new DateTime(2023, 12, 19, 12, 15, 42, 277, DateTimeKind.Local).AddTicks(1040)
                                 },
                                 new
                                 {
-                                    FlightId = new Guid("de443a10-0590-45fb-a979-236e02f71da4"),
+                                    FlightId = new Guid("a3082f01-a9fb-43b3-951e-caef3f4ced4f"),
                                     Place = "Munchen",
-                                    Time = new DateTime(2023, 12, 13, 17, 6, 16, 706, DateTimeKind.Local).AddTicks(8759)
+                                    Time = new DateTime(2023, 12, 19, 12, 15, 42, 277, DateTimeKind.Local).AddTicks(1101)
                                 },
                                 new
                                 {
-                                    FlightId = new Guid("3ed06715-0de2-45b4-9981-be85678298ba"),
+                                    FlightId = new Guid("6ce7df58-6735-41a8-aedd-2bc2d697ec8a"),
                                     Place = "London",
-                                    Time = new DateTime(2023, 12, 13, 17, 6, 16, 706, DateTimeKind.Local).AddTicks(8763)
+                                    Time = new DateTime(2023, 12, 19, 12, 15, 42, 277, DateTimeKind.Local).AddTicks(1104)
                                 });
                         });
 
