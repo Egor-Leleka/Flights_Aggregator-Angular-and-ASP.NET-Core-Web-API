@@ -7,6 +7,11 @@ import { MyBookingComponent } from './components/my-booking/my-booking.component
 
 const routes: Routes = [
   {
+    path: '',
+    component: SearchFlightsComponent,
+    pathMatch: 'full'
+  },
+  {
     path: 'search-flights',
     component: SearchFlightsComponent
   },

@@ -2,21 +2,25 @@
     <nav
       class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
       <div class="container">
-        <a class="navbar-brand" [routerLink]="['/']">Flights</a>
+        <a class="navbar-brand" [routerLink]="['/search-flights']">Flights</a>
           <ul class="navbar-nav flex-grow">
+            
             <li class="nav-item"
                 [routerLinkActive]="['link-active']"
                 [routerLinkActiveOptions]="{ exact: true }">
               <a class="nav-link text-dark" [routerLink]="['/search-flights']">Flights</a>
             </li>
+
             <li>
               <a class="nav-link text-dark" [routerLink]="['/my-booking']">My Bookings</a>
             </li>
+
             <li>
               <a class="nav-link text-dark" [routerLink]="['/register-passenger']">Switch Passenger
               <i class="fas fa-user-circle"></i>
               </a>
             </li>
+
           </ul>
         </div>
     </nav>

@@ -33,37 +33,14 @@ export class FlightService {
   
     return this.http.get<Array<FlightRm>>(`https://localhost:7290/api/${this.url}`, { params: httpParams });
   }
-
   
    findFlight(id: string): Observable<FlightRm> {
     return this.http.get<FlightRm>(`https://localhost:7290/api/${this.url}/${id}`);
   }
-  
 
   bookFlight( booking: BookDto): Observable<BookDto> {
     return this.http.post<BookDto>(`https://localhost:7290/api/${this.url}`, booking);
 
   }
 
-  getMockFlights(): FlightRm[] {
-    const mockFlights: FlightRm[] = [];
-    // Generate mock flight data
-    for (let i = 0; i < 10; i++) {
-      mockFlights.push({
-        airline: `Airline ${i}`,
-        arrival: {
-          place: `Destination ${i}`,
-          time: new Date().toISOString()
-        },
-        departure: {
-          place: `Origin ${i}`,
-          time: new Date().toISOString()
-        },
-        // id: `flight-${i}`,
-        price: `${100 + i * 10} USD`,
-        remainingNumberOfSeats: 20 - i
-      });
-    }
-    return mockFlights;
-  }
 }

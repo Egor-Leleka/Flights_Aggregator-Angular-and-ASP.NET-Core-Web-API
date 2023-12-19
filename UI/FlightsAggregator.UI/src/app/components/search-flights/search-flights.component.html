@@ -2,7 +2,7 @@
 
 <form [formGroup]="searchForm" (ngSubmit)="search()">
   <div class="m-5 d-grid gap-3">
-
+    
     <div class="row">
 
       <div class="col">
@@ -40,7 +40,7 @@
     </div>
 
     <div class="row">
-
+      
       <div class="col text-end">
         <label class="form-label text-primary mt-2">
           Number of Passengers
@@ -52,7 +52,6 @@
           <div class="input-group-text">For</div>
           <input formControlName="numberOfPassengers" class="form-control" type="number" placeholder="1" />
           <div class="input-group-text">Passengers</div>
-
           <button type="submit" class="btn-primary btn">
             <i class="fas fa-search"></i>
           </button>
@@ -60,7 +59,6 @@
       </div>
 
     </div>
-
 
   </div>
 </form>
@@ -70,15 +68,18 @@
 <div *ngFor="let flight of searchResult">
   <div class="card text-dark mt-5 text-center">
     <div class="card-body" style="padding: 20px; background-color:#e5ecf26e">
+
       <h6 class="card-title">{{flight.airline}}</h6>
+
       <div class="card-title" style="color:#ff3939">
         {{flight.remainingNumberOfSeats}} remaining seats
       </div>
 
       <div class="d-grid text-center g-2">
-        <div class="row">
-          <div class="col">
 
+        <div class="row">
+
+          <div class="col">
             <div class="col m-3">
               <i class="text-primary fas fa-plane-departure" style="font-size:20px;"></i>
             </div>
@@ -99,7 +100,6 @@
               {{flight.departure?.time | date:'shortTime' }}
             </div>
 
-
           </div>
 
           <div class="col">
@@ -118,6 +118,7 @@
           </div>
 
           <div class="col">
+
             <div class="col m-3">
               <i class="text-primary fas fa-plane-arrival" style="font-size:20px;"></i>
             </div>
@@ -137,13 +138,11 @@
               <i class="fa-regular fa-clock"></i>
               {{flight.arrival?.time | date:'shortTime' }}
             </div>
-          </div>
 
+          </div>
 
         </div>
       </div>
-
     </div>
-
   </div>
 </div>

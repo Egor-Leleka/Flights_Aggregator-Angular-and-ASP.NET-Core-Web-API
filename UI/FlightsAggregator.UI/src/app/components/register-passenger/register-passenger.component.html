@@ -10,17 +10,15 @@
             Email is invalid
           </div>
         </div>
-  
       </div>
+
       <div class="d-grid gap-3">
-  
+
         <div class="form-floating">
-  
           <input formControlName="firstName" class="form-control" type="text" id="firstName" placeholder="First Name" />
           <label class="form-label" for="firstName">First Name</label>
   
           <div class="invalid-feedback d-block" *ngIf="form.controls.firstName.invalid && (form.controls.firstName.dirty || form.controls.firstName.touched)">
-  
             <div *ngIf="form.controls.firstName.errors">
               First name is invalid
             </div>
@@ -43,21 +41,20 @@
   
         <div>
           <input formControlName="isFemale" id="female" class="form-check-input" [value]="true" type="radio" />
-        <label class="ms-2 form-check-label" for="female">Female</label>
+          <label class="ms-2 form-check-label" for="female">Female</label>
         </div>
+
         <div>
           <input formControlName="isFemale" id="male" class="form-check-input" [value]="false" type="radio" />
-        <label class="ms-2 form-check-label" for="male">Male</label>
+          <label class="ms-2 form-check-label" for="male">Male</label>
         </div>
 
-        
-        
-        
-
       </div>
+
       <div class="d-flex justify-content-center center">
         <button (click)="register()" type="submit" class="btn btn-primary">Login <i class="fa fa-sign-in" aria-hidden="true"></i></button>
       </div>
+      
     </div>
   </form>
   
