@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { BookDto } from 'src/app/models/book-dto';
 import { BookingRm } from 'src/app/models/booking-rm';
 import { AuthService } from 'src/app/services/auth/auth.service';
@@ -12,15 +13,22 @@ import { BookingService } from 'src/app/services/booking/booking.service';
 export class MyBookingComponent implements OnInit {
 
   bookings!: BookingRm[];
-  email: string = this.authService.currentUser?.email ?? '';
+  email: string = this.authService.currentUser?.email ?? ''
  
   constructor(private bookingService: BookingService,
-    private authService: AuthService) { }
+    private authService: AuthService,
+    private router: Router) { }
 
 
   ngOnInit(): void {
-    this.bookingService.listBooking( this.email )
-      .subscribe(r => this.bookings = r, this.handleError);
+    if(!this.email)
+      this.router.navigate(['/register-passenger'])
+
+    this.bookingService.listBooking(this.email)
+      .subscribe(
+        r => this.bookings = r, 
+        err => this.handleError(err)
+      );
   }
 
   private handleError(err: any) {

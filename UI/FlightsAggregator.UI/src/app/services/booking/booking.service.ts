@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { BookDto } from 'src/app/models/book-dto';
@@ -9,15 +9,21 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class BookingService {
-  url = "booking"
+  private apiUrl = `https://localhost:7290/api/booking`;
 
   constructor(private http: HttpClient) { }
 
-  cancelBooking(booking: BookDto): Observable<void>{
-    return this.http.delete<void>(`https://localhost:7290/api/${this.url}`)
+  listBooking(email: string): Observable<Array<BookingRm>>{
+    return this.http.get<Array<BookingRm>>(`${this.apiUrl}/${email}`);
   }
 
-  listBooking(email: string): Observable<Array<BookingRm>>{
-    return this.http.get<Array<BookingRm>>(`https://localhost:7290/api/${email}`)
-  }
+  cancelBooking(booking: BookDto): Observable<void> {
+    const httpOptions = {
+        headers: new HttpHeaders({
+            'Content-Type': 'application/json'
+        }),
+        body: booking
+    };
+    return this.http.delete<void>(`${this.apiUrl}`, httpOptions);
+}
 }
